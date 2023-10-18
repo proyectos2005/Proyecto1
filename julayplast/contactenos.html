@@ -1,0 +1,49 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/contactenos.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="boxContent"> 
+			<!-- Formlario principal -->
+	<h1>Formulario de contacto</h1>
+	<form id="form">
+	<div id="formContent">
+	<div class="contenedorForm">
+		<label for="nombre">nombre:</label>
+		<input class="campoTexto" type="text" required id="nombre" name="nombre">
+	</div>
+	<div class="contenedorForm derecha">
+		<input class="campoTexto" type="email" required id="email" name="mail">
+		<label for="email">correo:</label>
+	</div>
+	<div class="contenedorForm">
+		<label for="mensaje">mensaje:</label>
+		<textarea class="campoTexto" id="mensaje" required></textarea>
+	</div>
+		<input type="submit" value="enviar" class="enviar-btn">
+	</div>
+
+		<!-- Formulario para móviles -->
+	<div id="formMobile">
+		<input type="radio" name="radio-1" class="radio" id="radioNombre">
+		<label for="radioNombre">nombre:</label>
+			<input type="text" id="nombreMobile" class="campoTexto" required placeholder="nombre completo">
+		<input type="radio" name="radio-2" class="radio" id="radioEmail">
+		<label for="radioEmail">correo:</label>
+			<input type="email" id="emailMobile" class="campoTexto" required placeholder="correo electronico">
+		<input type="radio" name="radio-3" class="radio" id="radioMensaje">
+		<label for="radioMensaje">mensaje:</label>
+			<textarea id="mensajeMobile" class="campoTexto" required placeholder="mensaje.."></textarea>
+
+			<input type="submit" value="enviar" class="enviar-btn">
+	</div>
+
+	</form>
+
+</div>
+</body>
+</html>

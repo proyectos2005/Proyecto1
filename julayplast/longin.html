@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/Longin.css">
+	<title>Documento</title>
+</head>
+<body>
+
+<h2>Iniciar usuario para ingresar</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<!-- Formulario de creación de cuenta -->
+		<form action="../controlador/validarLongin.php" method="POST">
+			<h1>Crear una cuenta</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>o use su correo electrónico para registrarse</span>
+			<input type="text" placeholder="Nombre" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Contraseña" /> <!-- Campo de contraseña oculto -->
+			<button>Inscribirse</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		 <!-- Formulario de inicio de sesión -->
+		<form action="#">
+			<h1>Iniciar sesión</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<div>
+				
+			</div>
+			<span>o usa tu cuenta</span>
+			<input type="text" placeholder="Email" />
+			<input type="password" placeholder="Contraseña" /> <!-- Campo de contraseña oculto -->
+			<a href="#">¿Olvidaste tu contraseña?</a>
+			<button type="submit" class="btn-longin">Iniciar sesión</button>
+			
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>¡Bienvenido de nuevo!</h1>
+				<p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+				<button class="ghost" id="signIn">Iniciar sesión</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>¡Hola, amigo!</h1>
+				<p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+				<button class="ghost" id="signUp">Inscribirse</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<body>
+	<script src="js/Longin.js"></script>
+</body>
+</html>
